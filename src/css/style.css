@@ -1,14 +1,4 @@
-.status {
-  text-align: center;
-  margin-bottom: 5px;
-}
-
-.titleH1 {
-  text-align: center;
-}
-
-.field-game {
-  width: 450px;
+.pole-game {
   display: flex;
   flex-wrap: wrap;
   justify-content: space-around;
@@ -16,22 +6,24 @@
   margin-left: auto;
   margin-right: auto;
 
-  /* width: 500px; */
+  width: 450px;
   margin-bottom: 0;
 }
 
-.field {
+.pole {
   width: 100px;
   height: 100px;
   margin: 0 5px 10px;
-  background: green;
-  border-radius: 10%;   /* квадрат - круг */
+  background: blue;
+  border-radius: 30%;
+
+  border: 1px solid black;
 }
 
-.field_goblin {
-  background-image: url(../imj/goblin.png);
+.goblinPole {
+  background-image: url(../pic/goblin.png);
   background-position: center center;
   background-repeat: no-repeat;
   background-size: contain;
-  background-color: green;
+  background-color: blue;
 }
