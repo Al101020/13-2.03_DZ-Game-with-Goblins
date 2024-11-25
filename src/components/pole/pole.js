@@ -8,9 +8,10 @@ function createPole() {
   document.querySelector("body").append(divPole);
   
   for (let i = 0; i < 16; i++) {
-    let div = document.createElement("div");
-    div.classList = "pole";
-    document.querySelector(".pole-game").append(div);
+    let divPole = document.createElement("div");
+    divPole.classList = "pole";
+    divPole.id = 'pole' + [i + 1];
+    document.querySelector(".pole-game").append(divPole);
   }
 }
   

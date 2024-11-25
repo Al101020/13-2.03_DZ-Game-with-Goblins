@@ -1,14 +1,14 @@
 import "./title.css";
 
-function createH3(textTitle) {
-    const divStatus = document.createElement('h3');
+function createDiv(textTitle) {
+    const divStatus = document.createElement('div');
     divStatus.classList = 'status';
     divStatus.innerHTML = textTitle;
     document.querySelector('body').prepend(divStatus);
 }
 
-createH3('Промахов: <span>0</span><br>');
-createH3('Попаданий: <span>0</span><br>');
+createDiv('Промахов: <span>0</span><br>');
+createDiv('Попаданий: <span>0</span><br>');
 
 
 function createH1(textTitle) {

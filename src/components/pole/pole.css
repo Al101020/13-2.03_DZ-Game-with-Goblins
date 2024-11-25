@@ -3,12 +3,14 @@
     flex-wrap: wrap;
     justify-content: space-around;
     
-    margin-top: 30px;
+    margin-top: 10px;
     margin-left: auto;
     margin-right: auto;
   
     width: 450px;
     margin-bottom: 0;
+
+    cursor: url(../../pic/Molot_Cursor.png), auto;
   }
   
   .pole {
@@ -28,4 +30,8 @@
     background-size: contain;
     background-color: blue;
   }
+
+  /* body {
+    cursor: url(путь_к_изображению), auto;
+    } */
   

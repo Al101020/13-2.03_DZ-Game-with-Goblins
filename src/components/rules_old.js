@@ -1,8 +1,5 @@
-console.log('logic.js');
-
-const arrayPole = Array.from(document.querySelectorAll('.pole'));
-
-console.log(arrayPole);
+// --------- поле
+const arrayFields = Array.from(document.querySelectorAll('.field'));
 
 let seconds = 0;
 
@@ -30,18 +27,13 @@ function secondsLimit() {
 
 let timerId = setInterval(secondsLimit, 1000);
 
-console.log(arrayPole.length);
-
-for(let i = 0; i < arrayPole.length; i++){
-    console.log(arrayPole.length);
+for(let i = 0; i < arrayFields.length; i++){
     function poleClick() {
 
-        console.log(arrayPole.length);
-
-        if (document.getElementById('pole' + [i + 1]).className == 'pole goblinPole') {
+        if (document.getElementById('field' + [i + 1]).className == 'field field_goblin') {
             document.querySelector('.dead').textContent++;
             secondsLimit();
-        } else if (document.getElementById('pole' + [i + 1]).className == 'pole') {
+        } else if (document.getElementById('field' + [i + 1]).className == 'field') {
             document.querySelector('.lost').textContent++;
             secondsLimit();
         }
@@ -49,8 +41,7 @@ for(let i = 0; i < arrayPole.length; i++){
         seconds = 0;
     }
 
-    console.log(document.getElementById('pole' + [i + 1]));
-    document.getElementById('pole' + [i + 1]).onclick = poleClick;
+    document.getElementById('field' + [i + 1]).onclick = poleClick;
 };
 
 // --------- попал / промахнулся
